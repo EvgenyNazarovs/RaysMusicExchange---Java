@@ -33,4 +33,9 @@ public class SaxophoneTest {
     public void hasModel() {
         assertEquals("soprano", saxophone.getModel());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Here comes the saxophone!..", saxophone.play());
+    }
 }

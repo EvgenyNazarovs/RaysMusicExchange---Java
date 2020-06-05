@@ -34,6 +34,11 @@ public class DrumKitTest {
         assertEquals(7, drumKit.getNumberOfPieces());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("Boom boom boom", drumKit.play());
+    }
+
 
 
 }

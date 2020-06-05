@@ -13,4 +13,8 @@ public class DrumKit extends Instrument {
     public int getNumberOfPieces() {
         return numberOfPieces;
     }
+
+    public String play() {
+        return "Boom boom boom";
+    }
 }

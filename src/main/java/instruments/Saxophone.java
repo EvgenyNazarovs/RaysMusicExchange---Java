@@ -12,4 +12,8 @@ public class Saxophone extends Instrument {
     public String getModel() {
         return model;
     }
+
+    public String play() {
+        return "Here comes the saxophone!..";
+    }
 }
