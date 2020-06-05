@@ -4,7 +4,7 @@ public enum Type {
 
     BRASS("brass"),
     STRING("string"),
-    WOODWING("woodwind"),
+    WOODWIND("woodwind"),
     KEYBOARD("keyboard"),
     PERCUSSION("percussion");
 
