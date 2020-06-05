@@ -4,14 +4,19 @@ import behaviours.IPlay;
 
 public abstract class Instrument implements IPlay {
 
-    String material;
-    String colour;
-    Type type;
+    private String material;
+    private String colour;
+    private Type type;
+    private double buyingPrice;
+    private double sellingPrice;
 
-    public Instrument(String material, String colour, Type type) {
+
+    public Instrument(String material, String colour, Type type, double buyingPrice, double sellingPrice) {
         this.material = material;
         this.colour = colour;
         this.type = type;
+        this.buyingPrice = buyingPrice;
+        this.sellingPrice = sellingPrice;
     }
 
     public String getMaterial() {
@@ -24,5 +29,13 @@ public abstract class Instrument implements IPlay {
 
     public Type getType() {
         return type;
+    }
+
+    public double getBuyingPrice() {
+        return buyingPrice;
+    }
+
+    public double getSellingPrice() {
+        return sellingPrice;
     }
 }

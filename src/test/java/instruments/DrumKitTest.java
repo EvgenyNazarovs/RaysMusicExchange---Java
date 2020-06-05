@@ -11,7 +11,7 @@ public class DrumKitTest {
 
     @Before
     public void setUp() {
-        drumKit = new DrumKit("wood", "white", Type.PERCUSSION, 7);
+        drumKit = new DrumKit("wood", "white", Type.PERCUSSION, 400, 500, 7);
     }
 
     @Test
@@ -37,6 +37,16 @@ public class DrumKitTest {
     @Test
     public void canPlay() {
         assertEquals("Boom boom boom", drumKit.play());
+    }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(400, drumKit.getBuyingPrice(), 0.1);
+    }
+
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(500, drumKit.getSellingPrice(), 0.1);
     }
 
 
