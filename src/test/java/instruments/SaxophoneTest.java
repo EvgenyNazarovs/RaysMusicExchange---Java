@@ -48,4 +48,9 @@ public class SaxophoneTest {
     public void hasSellingPrice() {
         assertEquals(1200, saxophone.getSellingPrice(), 0.1);
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(200, saxophone.calculateMarkup(), 0.1);
+    }
 }
